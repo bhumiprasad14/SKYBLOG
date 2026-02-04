@@ -1,18 +1,32 @@
 export const blogs = [
   {
     id: 1,
-    title: "Getting Started with React",
-    desc: "Build modern web apps using React and best practices.",
-    date: "Jan 28, 2026",
-    tags: ["React", "Frontend"],
-    image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159",
+    title: "Getting Started with React and TypeScript",
+    desc: "Learn how to set up a modern React application with TypeScript for type-safe development.",
+    date: "January 28, 2026",
+    tags: ["React", "TypeScript", "Web Development"],
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop",
+    author: "Sarah Mitchell",
+    content: "Learn how to set up a modern React application with TypeScript for type-safe development. This comprehensive guide covers project setup, component patterns, type definitions, and best practices for building scalable applications with React and TypeScript."
   },
   {
     id: 2,
-    title: "Node.js Backend Essentials",
-    desc: "Learn backend APIs and server-side logic.",
-    date: "Jan 25, 2026",
-    tags: ["Node", "Backend"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    title: "Building Scalable APIs with Node.js",
+    desc: "Best practices for designing and implementing RESTful APIs that can handle production workloads.",
+    date: "January 25, 2026",
+    tags: ["Node.js", "API", "Backend"],
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
+    author: "Sarah Mitchell",
+    content: "Best practices for designing and implementing RESTful APIs that can handle production workloads. Learn about architecture patterns, middleware, authentication, error handling, and optimization techniques for building robust Node.js APIs."
   },
+  {
+    id: 3,
+    title: "Modern CSS Techniques with Tailwind",
+    desc: "Explore utility-first CSS and how Tailwind CSS revolutionizes styling in modern web applications.",
+    date: "January 22, 2026",
+    tags: ["CSS", "Tailwind", "Frontend"],
+    image: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&auto=format&fit=crop",
+    author: "Sarah Mitchell",
+    content: "Explore utility-first CSS and how Tailwind CSS revolutionizes styling in modern web applications. This guide covers responsive design, component composition, theming, and tips for optimizing your Tailwind CSS workflow."
+  }
 ];

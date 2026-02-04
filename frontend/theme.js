@@ -1,10 +1,14 @@
 // Theme configuration
-module.exports = {
-  bg: "linear-gradient(180deg, #020617, #000)",
-  card: "linear-gradient(145deg, #0f172a, #020617)",
-  border: "1px solid rgba(255,255,255,0.08)",
+export const theme = {
+  bg: "linear-gradient(180deg, #071027 0%, #071a2d 100%)",
+  card: "#0b1220",
+  border: "1px solid rgba(255,255,255,0.05)",
   primary: "#7c3aed",
+  secondary: "#2563eb",
   accent: "#facc15",
-  text: "#e5e7eb",
-  muted: "#9ca3af",
+  text: "#e2e8f0",
+  muted: "#94a3b8",
+  darkBg: "#0a0e1a",
 };
+
+module.exports = { theme };

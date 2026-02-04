@@ -1,76 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>TechBlog — Welcome</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>TechBlog - Modern Web Development Insights</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/home.css">
+  <link rel="stylesheet" href="/styles/blogs.css">
+  <link rel="stylesheet" href="/styles/blog-detail.css">
+  <link rel="stylesheet" href="/styles/admin.css">
+  <link rel="stylesheet" href="/styles/dashboard.css">
+  <link rel="stylesheet" href="/styles/footer.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">TechBlog</h1>
-      <nav class="nav">
-        <a href="#">Home</a>
-        <a href="#">Blogs</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <div class="hero-text">
-        <h2>Welcome to TechBlog</h2>
-        <p>Explore insights on modern web development, programming, and technology.</p>
-      </div>
-      <img class="hero-img" src="https://images.unsplash.com/photo-1733231291506-34503f83f503?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" alt="Author">
-    </section>
-
-    <section class="author">
-      <img class="avatar" src="https://images.unsplash.com/photo-1733231291506-34503f83f503?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Sarah Mitchell">
-      <div>
-        <h3>Sarah Mitchell</h3>
-        <p>Full-stack developer and tech writer with 8+ years of experience. Passionate about building scalable web applications and sharing knowledge.</p>
-      </div>
-    </section>
-
-    <section class="posts">
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop" alt="React and TypeScript">
-        <div class="card-body">
-          <h4><a href="blog/1.html">Getting Started with React and TypeScript</a></h4>
-          <p>Learn how to set up a modern React application with TypeScript for type-safe development.</p>
-          <div class="meta">Admin • January 28, 2026</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop" alt="Node.js APIs">
-        <div class="card-body">
-          <h4><a href="blog/2.html">Building Scalable APIs with Node.js</a></h4>
-          <p>Best practices for designing and implementing RESTful APIs that can handle production workloads.</p>
-          <div class="meta">Admin • January 25, 2026</div>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&auto=format&fit=crop" alt="Tailwind CSS">
-        <div class="card-body">
-          <h4><a href="blog/3.html">Modern CSS Techniques with Tailwind</a></h4>
-          <p>Explore utility-first CSS and how Tailwind CSS revolutionizes styling in modern web applications.</p>
-          <div class="meta">Admin • January 22, 2026</div>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>TechBlog — sharing practical tutorials and insights.</p>
-      <div class="links"> <a href="https://github.com/">GitHub</a> <a href="https://twitter.com/">Twitter</a> <a href="https://linkedin.com/">LinkedIn</a> </div>
-    </div>
-  </footer>
+  <div id="root"></div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" src="/src/index.jsx"></script>
 </body>
 </html>
