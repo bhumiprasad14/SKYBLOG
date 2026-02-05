@@ -1,4 +1,4 @@
-# TechBlog — Local copy
+# SkyBlog — Local copy
 
 This is a lightweight static replica of the Figma site you provided.
 

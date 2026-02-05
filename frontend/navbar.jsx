@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <span className="logo-icon">📘</span>
-          <span className="logo-text">TechBlog</span>
+          <span className="logo-text">SkyBlog</span>
         </Link>
         
         <div className="navbar-menu">

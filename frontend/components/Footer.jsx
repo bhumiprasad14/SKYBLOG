@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-container">
         <div className="footer-content">
-          <h3>TechBlog</h3>
+          <h3>SkyBlog</h3>
           <p>
-            TechBlog is a platform dedicated to sharing in-depth knowledge about modern web
+            SkyBlog is a platform dedicated to sharing in-depth knowledge about modern web
             development, programming best practices, and cutting-edge technology. Our
             mission is to help developers grow their skills through clear, practical tutorials and
             insights from experienced professionals.
@@ -34,13 +34,13 @@ export default function Footer() {
             <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
             <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="mailto:contact@techblog.com">Email</a></li>
+            <li><a href="mailto:contact@skyblog.com">Email</a></li>
           </ul>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 TechBlog. All rights reserved.</p>
+        <p>&copy; 2024 SkyBlog. All rights reserved.</p>
         <div className="footer-links">
           <a href="/">Privacy Policy</a>
           <a href="/">Terms of Service</a>

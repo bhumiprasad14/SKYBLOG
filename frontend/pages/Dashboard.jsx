@@ -15,7 +15,7 @@ export default function Dashboard() {
     date: "",
     tags: "",
     image: "",
-    author: "Sarah Mitchell"
+    author: "Akash Banerjee"
   });
 
   useEffect(() => {
@@ -62,7 +62,7 @@ export default function Dashboard() {
         date: formData.date,
         tags: formData.tags.split(",").map(t => t.trim()),
         image: formData.image,
-        author: "Sarah Mitchell"
+        author: "Akash Banerjee"
       };
       setBlogs([newBlog, ...blogs]);
     }
@@ -78,7 +78,7 @@ export default function Dashboard() {
       date: "",
       tags: "",
       image: "",
-      author: "Sarah Mitchell"
+      author: "Akash Banerjee"
     });
     setShowForm(false);
     setEditingId(null);

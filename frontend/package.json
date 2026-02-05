@@ -1,6 +1,7 @@
 {
-  "name": "techblog",
+  "name": "skyblog",
   "version": "1.0.0",
+  "type": "module",
   "description": "A modern blogging platform with React and Node.js",
   "main": "server.js",
   "scripts": {

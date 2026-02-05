@@ -6,7 +6,7 @@ export const blogs = [
     date: "January 28, 2026",
     tags: ["React", "TypeScript", "Web Development"],
     image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop",
-    author: "Sarah Mitchell",
+    author: "Akash Banerjee",
     content: "Learn how to set up a modern React application with TypeScript for type-safe development. This comprehensive guide covers project setup, component patterns, type definitions, and best practices for building scalable applications with React and TypeScript."
   },
   {
@@ -16,7 +16,7 @@ export const blogs = [
     date: "January 25, 2026",
     tags: ["Node.js", "API", "Backend"],
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
-    author: "Sarah Mitchell",
+    author: "Akash Banerjee",
     content: "Best practices for designing and implementing RESTful APIs that can handle production workloads. Learn about architecture patterns, middleware, authentication, error handling, and optimization techniques for building robust Node.js APIs."
   },
   {
@@ -26,7 +26,7 @@ export const blogs = [
     date: "January 22, 2026",
     tags: ["CSS", "Tailwind", "Frontend"],
     image: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&auto=format&fit=crop",
-    author: "Sarah Mitchell",
+    author: "Akash Banerjee",
     content: "Explore utility-first CSS and how Tailwind CSS revolutionizes styling in modern web applications. This guide covers responsive design, component composition, theming, and tips for optimizing your Tailwind CSS workflow."
   }
 ];

@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero Section with Author Profile */}
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Welcome to TechBlog</h1>
+          <h1>Welcome to SkyBlog</h1>
           <p className="hero-subtitle">
             Explore insights on modern web development, programming, and technology
           </p>
@@ -67,9 +67,9 @@ export default function Home() {
 
       {/* About Section */}
       <section className="about-section">
-        <h2>About TechBlog</h2>
+        <h2>About SkyBlog</h2>
         <p>
-          TechBlog is a platform dedicated to sharing in-depth knowledge about modern web
+          SkyBlog is a platform dedicated to sharing in-depth knowledge about modern web
           development, programming best practices, and cutting-edge technology. Our
           mission is to help developers grow their skills through clear, practical tutorials and
           insights from experienced professionals.

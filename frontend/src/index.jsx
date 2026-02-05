@@ -28,7 +28,7 @@ function Navbar() {
     React.createElement('div', { className: 'navbar-container' },
       React.createElement('a', { href: '/', className: 'navbar-logo', onClick: (e) => { e.preventDefault(); navigate('/'); } },
         React.createElement('span', { className: 'logo-icon' }, '📘'),
-        React.createElement('span', { className: 'logo-text' }, 'TechBlog')
+        React.createElement('span', { className: 'logo-text' }, 'SkyBlog')
       ),
       React.createElement('div', { className: 'navbar-menu' },
         React.createElement('a', { href: '/', className: 'nav-link', onClick: (e) => { e.preventDefault(); navigate('/'); } }, 'Home'),
@@ -44,8 +44,8 @@ function Footer() {
   return React.createElement('footer', { className: 'site-footer' },
     React.createElement('div', { className: 'footer-container' },
       React.createElement('div', { className: 'footer-content' },
-        React.createElement('h3', null, 'TechBlog'),
-        React.createElement('p', null, 'TechBlog is a platform dedicated to sharing in-depth knowledge about modern web development, programming best practices, and cutting-edge technology.'),
+        React.createElement('h3', null, 'SkyBlog'),
+        React.createElement('p', null, 'SkyBlog is a platform dedicated to sharing in-depth knowledge about modern web development, programming best practices, and cutting-edge technology.'),
         React.createElement('p', null, 'Whether you\'re a beginner learning the basics or an experienced developer looking to level up, you\'ll find valuable content covering React, TypeScript, Node.js, and more.')
       ),
       React.createElement('div', { className: 'footer-section' },
@@ -62,12 +62,12 @@ function Footer() {
           React.createElement('li', null, React.createElement('a', { href: 'https://github.com/', target: '_blank', rel: 'noopener noreferrer' }, 'GitHub')),
           React.createElement('li', null, React.createElement('a', { href: 'https://twitter.com/', target: '_blank', rel: 'noopener noreferrer' }, 'Twitter')),
           React.createElement('li', null, React.createElement('a', { href: 'https://linkedin.com/', target: '_blank', rel: 'noopener noreferrer' }, 'LinkedIn')),
-          React.createElement('li', null, React.createElement('a', { href: 'mailto:contact@techblog.com' }, 'Email'))
+          React.createElement('li', null, React.createElement('a', { href: 'mailto:contact@skyblog.com' }, 'Email'))
         )
       )
     ),
     React.createElement('div', { className: 'footer-bottom' },
-      React.createElement('p', null, '© 2024 TechBlog. All rights reserved.'),
+      React.createElement('p', null, '© 2024 SkyBlog. All rights reserved.'),
       React.createElement('div', { className: 'footer-links' },
         React.createElement('a', { href: '#' }, 'Privacy Policy'),
         React.createElement('a', { href: '#' }, 'Terms of Service')
@@ -108,7 +108,7 @@ function Home() {
   return React.createElement('div', { className: 'home-container' },
     React.createElement('section', { className: 'hero-section' },
       React.createElement('div', { className: 'hero-content' },
-        React.createElement('h1', null, 'Welcome to TechBlog'),
+        React.createElement('h1', null, 'Welcome to SkyBlog'),
         React.createElement('p', { className: 'hero-subtitle' }, 'Explore insights on modern web development, programming, and technology')
       )
     ),
@@ -157,8 +157,8 @@ function Home() {
       )
     ),
     React.createElement('section', { className: 'about-section' },
-      React.createElement('h2', null, 'About TechBlog'),
-      React.createElement('p', null, 'TechBlog is a platform dedicated to sharing in-depth knowledge about modern web development, programming best practices, and cutting-edge technology. Our mission is to help developers grow their skills through clear, practical tutorials and insights from experienced professionals.'),
+      React.createElement('h2', null, 'About SkyBlog'),
+      React.createElement('p', null, 'SkyBlog is a platform dedicated to sharing in-depth knowledge about modern web development, programming best practices, and cutting-edge technology. Our mission is to help developers grow their skills through clear, practical tutorials and insights from experienced professionals.'),
       React.createElement('p', null, 'Whether you\'re a beginner learning the basics or an experienced developer looking to level up, you\'ll find valuable content covering React, TypeScript, Node.js, cloud architecture, and more.')
     )
   );
@@ -368,7 +368,7 @@ function Dashboard() {
         date: formData.date,
         tags: formData.tags.split(',').map(t => t.trim()),
         image: formData.image,
-        author: 'Sarah Mitchell'
+        author: 'Akash Banerjee'
       };
       setBlogs([newBlog, ...blogs]);
     }
