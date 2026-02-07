@@ -1,4 +1,3 @@
-const { BrowserRouter, Routes, Route, Link } = window.ReactRouterDOM || {};
 const React = window.React;
 const ReactDOM = window.ReactDOM;
 
@@ -22,18 +21,18 @@ function navigate(path) {
 
 // Navbar Component
 function Navbar() {
-  const location = useLocation();
-  
-  return React.createElement('nav', { className: 'navbar' },
-    React.createElement('div', { className: 'navbar-container' },
-      React.createElement('a', { href: '/', className: 'navbar-logo', onClick: (e) => { e.preventDefault(); navigate('/'); } },
-        React.createElement('span', { className: 'logo-icon' }, '📘'),
-        React.createElement('span', { className: 'logo-text' }, 'SkyBlog')
-      ),
-      React.createElement('div', { className: 'navbar-menu' },
-        React.createElement('a', { href: '/', className: 'nav-link', onClick: (e) => { e.preventDefault(); navigate('/'); } }, 'Home'),
-        React.createElement('a', { href: '/blogs', className: 'nav-link', onClick: (e) => { e.preventDefault(); navigate('/blogs'); } }, 'Blogs'),
-        React.createElement('a', { href: '/admin', className: 'nav-btn', onClick: (e) => { e.preventDefault(); navigate('/admin'); } }, 'Admin Login')
+  return (
+    React.createElement('nav', { className: 'navbar' },
+      React.createElement('div', { className: 'navbar-container' },
+        React.createElement('a', { href: '/', className: 'navbar-logo', onClick: (e) => { e.preventDefault(); navigate('/'); } },
+          React.createElement('span', { className: 'logo-icon' }, '📘'),
+          React.createElement('span', { className: 'logo-text' }, 'SkyBlog')
+        ),
+        React.createElement('div', { className: 'navbar-menu' },
+          React.createElement('a', { href: '/', className: 'nav-link', onClick: (e) => { e.preventDefault(); navigate('/'); } }, 'Home'),
+          React.createElement('a', { href: '/blogs', className: 'nav-link', onClick: (e) => { e.preventDefault(); navigate('/blogs'); } }, 'Blogs'),
+          React.createElement('a', { href: '/admin', className: 'nav-btn', onClick: (e) => { e.preventDefault(); navigate('/admin'); } }, 'Admin Login')
+        )
       )
     )
   );
@@ -46,7 +45,7 @@ function Footer() {
       React.createElement('div', { className: 'footer-content' },
         React.createElement('h3', null, 'SkyBlog'),
         React.createElement('p', null, 'SkyBlog is a platform dedicated to sharing in-depth knowledge about modern web development, programming best practices, and cutting-edge technology.'),
-        React.createElement('p', null, 'Whether you\'re a beginner learning the basics or an experienced developer looking to level up, you\'ll find valuable content covering React, TypeScript, Node.js, and more.')
+        React.createElement('p', null, 'Whether\'re a beginner learning the basics or an experienced developer looking to level up, you\'ll find valuable content covering React, TypeScript, Node.js, and more.')
       ),
       React.createElement('div', { className: 'footer-section' },
         React.createElement('h4', null, 'Quick Links'),
@@ -67,7 +66,7 @@ function Footer() {
       )
     ),
     React.createElement('div', { className: 'footer-bottom' },
-      React.createElement('p', null, '© 2024 SkyBlog. All rights reserved.'),
+      React.createElement('p', null, '© 2026 SkyBlog. All rights reserved.'),
       React.createElement('div', { className: 'footer-links' },
         React.createElement('a', { href: '#' }, 'Privacy Policy'),
         React.createElement('a', { href: '#' }, 'Terms of Service')
@@ -116,11 +115,11 @@ function Home() {
       React.createElement('div', { className: 'author-card' },
         React.createElement('img', {
           src: 'https://images.unsplash.com/photo-1733231291506-34503f83f503?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-          alt: 'Sarah Mitchell',
+          alt: 'Akash Banerjee',
           className: 'author-avatar'
         }),
         React.createElement('div', { className: 'author-info' },
-          React.createElement('h2', null, 'Sarah Mitchell'),
+          React.createElement('h2', null, 'Akash Banerjee'),
           React.createElement('p', { className: 'author-title' }, 'Full-stack Developer & Tech Writer'),
           React.createElement('p', { className: 'author-bio' }, 'Full-stack developer and tech writer with 8+ years of experience. Passionate about building scalable web applications and sharing knowledge through clear, practical tutorials. Specializing in React, Node.js, and cloud architecture.')
         )
@@ -149,7 +148,7 @@ function Home() {
               React.createElement('a', {
                 href: '#',
                 className: 'read-more',
-                onClick: (e) => { e.preventDefault(); navigate(`/blog/${blog.id}`); }
+                onClick: (e) => { e.preventDefault(); navigate('/blog/' + blog.id); }
               }, 'Read More →')
             )
           )
@@ -217,7 +216,7 @@ function Blogs() {
             React.createElement('a', {
               href: '#',
               className: 'read-more',
-              onClick: (e) => { e.preventDefault(); navigate(`/blog/${blog.id}`); }
+              onClick: (e) => { e.preventDefault(); navigate('/blog/' + blog.id); }
             }, 'Read More →')
           )
         )
@@ -290,7 +289,7 @@ function Dashboard() {
       date: "January 28, 2026",
       tags: ["React", "TypeScript", "Web Development"],
       image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop",
-      author: "Sarah Mitchell",
+      author: "Akash Banerjee",
       content: "Full content here"
     },
     {
@@ -300,7 +299,7 @@ function Dashboard() {
       date: "January 25, 2026",
       tags: ["Node.js", "API", "Backend"],
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
-      author: "Sarah Mitchell",
+      author: "Akash Banerjee",
       content: "Full content here"
     },
     {
@@ -310,7 +309,7 @@ function Dashboard() {
       date: "January 22, 2026",
       tags: ["CSS", "Tailwind", "Frontend"],
       image: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&auto=format&fit=crop",
-      author: "Sarah Mitchell",
+      author: "Akash Banerjee",
       content: "Full content here"
     }
   ]);
@@ -324,7 +323,7 @@ function Dashboard() {
     date: '',
     tags: '',
     image: '',
-    author: 'Sarah Mitchell'
+    author: 'Akash Banerjee'
   });
 
   React.useEffect(() => {
@@ -383,7 +382,7 @@ function Dashboard() {
       date: '',
       tags: '',
       image: '',
-      author: 'Sarah Mitchell'
+      author: 'Akash Banerjee'
     });
     setShowForm(false);
     setEditingId(null);
@@ -492,7 +491,7 @@ function Dashboard() {
         )
       ),
       React.createElement('div', { className: 'blogs-list' },
-        React.createElement('h2', null, `All Blogs (${blogs.length})`),
+        React.createElement('h2', null, 'All Blogs (' + blogs.length + ')'),
         React.createElement('table', { className: 'blogs-table' },
           React.createElement('thead', null,
             React.createElement('tr', null,
@@ -540,7 +539,7 @@ function BlogDetail() {
       date: "January 28, 2026",
       tags: ["React", "TypeScript", "Web Development"],
       image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop",
-      author: "Sarah Mitchell",
+      author: "Akash Banerjee",
       content: "Learn how to set up a modern React application with TypeScript for type-safe development. This comprehensive guide covers project setup, component patterns, and best practices."
     },
     {
@@ -550,7 +549,7 @@ function BlogDetail() {
       date: "January 25, 2026",
       tags: ["Node.js", "API", "Backend"],
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop",
-      author: "Sarah Mitchell",
+      author: "Akash Banerjee",
       content: "Best practices for designing and implementing RESTful APIs that can handle production workloads. Learn about architecture patterns, middleware, authentication, error handling, and optimization."
     },
     {
@@ -560,7 +559,7 @@ function BlogDetail() {
       date: "January 22, 2026",
       tags: ["CSS", "Tailwind", "Frontend"],
       image: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&auto=format&fit=crop",
-      author: "Sarah Mitchell",
+      author: "Akash Banerjee",
       content: "Explore utility-first CSS and how Tailwind CSS revolutionizes styling. Learn about responsive design, component composition, theming, and optimization techniques."
     }
   ];
@@ -588,7 +587,7 @@ function BlogDetail() {
       React.createElement('header', { className: 'blog-header' },
         React.createElement('h1', null, blog.title),
         React.createElement('div', { className: 'blog-meta' },
-          React.createElement('span', { className: 'author' }, `By ${blog.author}`),
+          React.createElement('span', { className: 'author' }, 'By ' + blog.author),
           React.createElement('span', { className: 'date' }, blog.date)
         )
       ),
@@ -617,6 +616,7 @@ function App() {
     location === '/admin' && React.createElement(AdminLogin),
     location === '/dashboard' && React.createElement(Dashboard),
     location.startsWith('/blog/') && React.createElement(BlogDetail),
+    location !== '/' && location !== '/blogs' && location !== '/admin' && location !== '/dashboard' && !location.startsWith('/blog/') && React.createElement(Home),
     React.createElement(Footer)
   );
 }

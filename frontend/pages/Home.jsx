@@ -20,11 +20,11 @@ export default function Home() {
         <div className="author-card">
           <img 
             src="https://images.unsplash.com/photo-1733231291506-34503f83f503?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBhdXRob3IlMjBwb3J0cmFpdHxlbnwxfHx8fDE3Njk5NjI5MTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Sarah Mitchell"
+            alt="Akash Banerjee"
             className="author-avatar"
           />
           <div className="author-info">
-            <h2>Sarah Mitchell</h2>
+            <h2>Akash Banerjee</h2>
             <p className="author-title">Full-stack Developer & Tech Writer</p>
             <p className="author-bio">
               Full-stack developer and tech writer with 8+ years of experience. Passionate
