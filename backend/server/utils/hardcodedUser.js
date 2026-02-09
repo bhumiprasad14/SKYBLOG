@@ -1,4 +1,4 @@
 export const HARD_CODED_USER = {
-    email: "sky123@example.com",
-    password: "123456"
+    email: "admin123@skyblog.com",
+    password: "@sky1234blog"
 };

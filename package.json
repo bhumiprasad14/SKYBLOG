@@ -4,12 +4,15 @@
   "type": "module",
   "description": "Full-stack blogging platform with React and Node.js",
   "scripts": {
-    "start": "node start.js",
-    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "npm start --prefix frontend",
     "backend": "npm start --prefix backend",
-    "frontend": "npm start --prefix frontend"
+    "dev": "concurrently \"npm run backend\" \"npm start\""
   },
-  "keywords": ["blog", "react", "nodejs"],
+  "keywords": [
+    "blog",
+    "react",
+    "nodejs"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

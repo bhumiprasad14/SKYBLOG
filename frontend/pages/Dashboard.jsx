@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { blogs as initialBlogs } from "../blogs";
+import { useAuth } from "../context/AuthContext";
 import "../styles/dashboard.css";
 
 export default function Dashboard() {
   const navigate = useNavigate();
+  const { isAuthenticated, loading, logout } = useAuth();
   const [blogs, setBlogs] = useState(initialBlogs);
   const [showForm, setShowForm] = useState(false);
   const [editingId, setEditingId] = useState(null);
@@ -19,13 +21,17 @@ export default function Dashboard() {
   });
 
   useEffect(() => {
-    if (!localStorage.getItem("adminLoggedIn")) {
+    if (!loading && !isAuthenticated) {
       navigate("/admin");
     }
-  }, [navigate]);
+  }, [navigate, isAuthenticated, loading]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   const handleLogout = () => {
-    localStorage.removeItem("adminLoggedIn");
+    logout();
     navigate("/");
   };
 
