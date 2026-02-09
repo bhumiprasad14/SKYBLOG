@@ -37,7 +37,7 @@ export default function Home() {
 
       {/* Featured Blogs */}
       <section className="blogs-section">
-        <h2 className="section-title">Latest Articles</h2>
+        <h2 className="section-title"></h2>
         <div className="blogs-grid">
           {blogs.map((blog) => (
             <article key={blog.id} className="blog-card">
