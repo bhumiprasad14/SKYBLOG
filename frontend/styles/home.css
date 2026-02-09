@@ -125,16 +125,11 @@
   border-radius: 1rem;
   padding: 2rem;
   align-items: flex-start;
-  animation: slideUpFade 0.8s ease-out 0.3s backwards;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* animation: slideUpFade 0.8s ease-out 0.3s backwards; */
+  /* transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.author-card:hover {
-  animation: glow 2s ease-in-out infinite;
-  border-color: rgba(124, 58, 237, 0.5);
-  background: rgba(255, 255, 255, 0.04);
-  transform: translateY(-8px);
-}
+
 
 .author-avatar {
   width: 140px;
@@ -142,8 +137,7 @@
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  animation: slideLeftFade 0.8s ease-out 0.4s backwards;
-  transition: all 0.3s ease;
+  
   box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
 }
 
@@ -153,7 +147,7 @@
 
 .author-info {
   flex: 1;
-  animation: slideRightFade 0.8s ease-out 0.4s backwards;
+  /* animation: slideRightFade 0.8s ease-out 0.4s backwards; */
 }
 
 .author-info h2 {
@@ -163,12 +157,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
 }
 
-.author-card:hover .author-info h2 {
+/* .author-card:hover .author-info h2 {
   transform: translateX(5px);
-}
+} */
 
 .author-title {
   color: #7c3aed;
