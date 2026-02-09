@@ -28,6 +28,10 @@ const blogSchema = new mongoose.Schema({
         type: String,
         required: true,
         default: "Akash Banerjee"
+    },
+    codeSnippet: {
+        type: String,
+        default: ""
     }
 }, {
     timestamps: true // automatically adds createdAt & updatedAt
